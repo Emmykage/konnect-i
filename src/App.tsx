@@ -1,5 +1,4 @@
 import './App.css'
-// import Home from './pages'
 import { Route, Routes } from 'react-router-dom'
 import MainLayout from './layouts/main'
 import Mentors from './pages/mentors'
