@@ -1,0 +1,41 @@
+.img-card-info{
+    .img-cont{
+        background-image: url("/backgrounds/img-bg.png");
+
+    }
+}
+
+.profileInfo > div{
+    box-shadow: 4px 4px 0px 0px rgba(225, 217, 213, 1);
+
+    .img-cont{
+      
+     
+    }
+}
+
+img{
+
+    &.green{
+        background-image: url("/backgrounds/img-green-bg.png");
+
+        background-color: rgba(118, 205, 205, 1);
+
+    }
+    &.pink{
+        background-color: rgba(242, 199, 204, 0.61);
+        background-image: url("/backgrounds/image-pink-bg.png");
+
+
+    }
+    &.orange{
+        background-color: rgba(244, 185, 136, 1);
+        background-image: url("/backgrounds/img-orange-bg.png");
+
+    }
+    &.blue{
+        background-color: rgba(165, 208, 235, 1);
+        background-image: url("/backgrounds/img-blue-bg.png");
+
+    }
+}
