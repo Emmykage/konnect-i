@@ -10,10 +10,10 @@ const UserCardInfo = () => {
 {
     userMentors.map(user => (
 
-        <div className='infoCard p-10 flex bg-white rounded-3xl gap-4 mb-10'>
+        <div className='infoCard p-10 flex flex-col md:flex-row bg-white rounded-3xl gap-4 mb-10'>
         <div>
-            <div className='w-56 img-cont'>
-            <img src={user.image} alt="" className={`${user.theme} rounded-2xl w-full`}/>
+            <div className='w-56 img-cont block m-auto'>
+            <img src={user.image} alt="" className={`${user.theme} rounded-2xl w-full `}/>
     
     
             </div>
@@ -24,7 +24,7 @@ const UserCardInfo = () => {
             </div>
         </div>
         <div className='info-content px-0 flex-1'>
-            <div className='personal-info flex flex-1'>
+            <div className='personal-info flex flex-col md:flex-row flex-1'>
                 <div className='px-4 flex-1'>
                     <div className='flex items-cent gap-3'>
                         <span className='my-1'>
@@ -64,8 +64,8 @@ const UserCardInfo = () => {
     
     
                 </div>
-                <div>
-                    <NavLink to={`/mentors/${user.id}`} className={"rounded-3xl text-gray-800  border font-semibold border-black/80 text-base px-8 py-2 bg-theme-purple"}>Konnect</NavLink>
+                <div className="bg-red-">
+                    <NavLink to={`/mentors/${user.id}`} className={"block md:w-max rounded-3xl text-gray-800  border font-semibold border-black/80 text-base px-8 py-2 bg-theme-purple text-center"}>Konnect</NavLink>
                 </div>
     
             </div>
@@ -73,16 +73,16 @@ const UserCardInfo = () => {
                 <HandShake/>
                 <div className='flex-1'>
                     <p>Help you with</p>
-                    <div className='flex justify gap-10 '>
+                    <div className='flex justify gap-4 md:gap-10 flex-col md:flex-row '>
                         <span className='font-semibold  text-base md:text-xl'>Interview Preparation</span>
-                        <span className='text-gray-400'>|</span>
+                        <span className='text-gray-400 hidden md:block'>|</span>
                         <span className='font-semibold  text-base md:text-xl'>Resume review Preparation</span>
-                        <span className='text-gray-400'>|</span>
+                        <span className='text-gray-400 hidden md:block'>|</span>
 
                         <span className='font-semibold  text-base md:text-xl'>Career  Preparation</span>
-                        <span className='text-gray-400'>|</span>
+                        <span className='text-gray-400 hidden md:block'>|</span>
 
-                        <span className='font-semibold  text-base md:text-xl text-gray-600'>+</span>
+                        <span className='font-semibold  text-base md:text-xl text-gray-600 hidden md:block'>+</span>
                     </div>
                 </div>
     

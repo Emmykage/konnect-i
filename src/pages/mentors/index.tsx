@@ -12,8 +12,8 @@ const Mentors = () => {
             </div>
         </header>
        
-        <div className='border-b border-gray-300 flex py-8 px-5 gap-5'>
-            <div className='flex gap-3'>
+        <div className='border-b border-gray-300 flex flex-col md:flex-row py-8 px-5 gap-5 justify-between'>
+            <div className='flex md:flex-row flex-col gap-3'>
                 <Select
                 className=' custom-select '
                 
@@ -54,7 +54,7 @@ const Mentors = () => {
         
           
         
-            <div className='flex rounded-3xl px-6 items-center gap-5 w-full bg-primary border border-gray-300 relative'>
+            <div className='flex rounded-3xl px-6 items-center gap-5 w-full max-w-md bg-primary border border-gray-300 relative'>
                 <span className='absolut'><SearchIcon/></span>
                 <input type="text" className='py-2 px-2 bg-transparent w-full focus:outline-none' placeholder='Search by name, company, role'/>
 
@@ -62,7 +62,7 @@ const Mentors = () => {
         </div>
         <div className='px-5'>
 
-        <div className=' flex py-7 gap-5'>
+        <div className=' flex py-7 gap-5 flex-col md:flex-row overflow-x-auto'>
             <span className='px-5 py-1 border border-gray-400 rounded-3xl flex items-center gap-2 text-gray-700 font-medium'>   SE/SDE  <CloseIcon/>    </span>
             <span className='px-5 py-1  border border-gray-400 rounded-3xl flex items-center gap-2 text-gray-700 font-medium'>   DS/AI/ML  <CloseIcon/>    </span>
             <span className='px-5 py-1 border border-gray-400 rounded-3xl flex items-center gap-2  text-gray-700 font-medium'>   FAANG  <CloseIcon/>    </span>
