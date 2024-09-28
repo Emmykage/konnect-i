@@ -1,6 +1,3 @@
-import React from 'react'
-import SideNav from '../components/navigation/sideNav/SideNav'
-
 const Home = () => {
   return (
     <div className='h-full bg-gray-50'>

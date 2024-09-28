@@ -1,4 +1,3 @@
-import React from 'react'
 import { Logo } from '../../../assets/Icons'
 import NavItems from '../../NavItems/NavItems'
 import './sideNav.scss'

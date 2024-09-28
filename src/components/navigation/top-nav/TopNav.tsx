@@ -1,4 +1,3 @@
-import React from 'react'
 import { Notification } from '../../../assets/Icons'
 import userImage from '../../../assets/images/pictures/user-image.png'
 const TopNav = () => {

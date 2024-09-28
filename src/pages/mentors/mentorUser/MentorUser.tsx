@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import userMentors from '../data/userData'
 import { useParams } from 'react-router-dom'
-import { CameraIcon, CloseIcon, DownArrow, FavIcon, FavoriteIcon, FavoritIconLg, InCurrency, Person, TargetIcon } from '../../../assets/Icons'
+import {FavIcon, FavoriteIcon, FavoritIconLg, InCurrency, Person, TargetIcon } from '../../../assets/Icons'
 import testImage from "../../../assets/images/pictures/testimonial-image.png"
 import { testimonialData } from '../data/testimonials'
 import './mentorUser.scss'

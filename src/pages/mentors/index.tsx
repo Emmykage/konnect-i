@@ -1,6 +1,5 @@
-import React from 'react'
 import './mentors.scss'
-import { CloseIcon, DownArrow, FavoriteIcon, HandShake, Person, SearchIcon, TargetIcon } from '../../assets/Icons'
+import { CloseIcon, DownArrow, SearchIcon } from '../../assets/Icons'
 import UserCardInfo from './user-card/UserCardInfo'
 import { Select } from 'antd'
 

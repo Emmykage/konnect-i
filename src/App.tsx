@@ -1,17 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Home from './pages'
+// import Home from './pages'
 import { Route, Routes } from 'react-router-dom'
 import MainLayout from './layouts/main'
 import Mentors from './pages/mentors'
 import MentorUser from './pages/mentors/mentorUser/MentorUser'
 import Booking from './pages/booking'
 import Job from './pages/job'
+import Home from './pages/home'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className='h-screen overflow-y-auto'>

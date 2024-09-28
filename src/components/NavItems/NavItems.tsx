@@ -1,4 +1,3 @@
-import React from 'react'
 import { NavLink } from 'react-router-dom'
 import home from '../../assets/images/svg/home.svg'
 import briefcase from '../../assets/images/svg/briefcase.svg'

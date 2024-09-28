@@ -1,10 +1,7 @@
-import React from 'react'
 import "./imgInfo.scss"
 import { NavLink } from 'react-router-dom'
 import { FavoriteIcon, HandShake, Person, TargetIcon } from '../../../assets/Icons'
 import userMentors from '../data/userData'
-// import userMentors from '../data/userData.js'
-// import userMentors from "../data/userData"
 
 const UserCardInfo = () => {
 
