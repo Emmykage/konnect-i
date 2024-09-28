@@ -16,15 +16,13 @@ const Mentors = () => {
         <div className='border-b border-gray-300 flex py-8 px-5 gap-5'>
             <div className='flex gap-3'>
                 <Select
-                className='h-40 custom-select '
-                // style={{ width: 280 }}
-                // options={[{ value: 'lucy', label: 'Lucy' }]}
+                className=' custom-select '
+                
 
                 allowClear
                 placeholder="Role"
                 />
                   <Select
-                // defaultValue="lucy"
                 
                 className='custom-select'
                 allowClear
@@ -43,7 +41,7 @@ const Mentors = () => {
                     
                     />
                        <Select
-                        className='h-10 custom-select'
+                        className='custom-select'
                         // style={{ width: 120, borderRadius: "20px" }}
                         allowClear
                         placeholder="Rating"

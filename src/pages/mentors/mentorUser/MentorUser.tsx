@@ -8,7 +8,7 @@ import './mentorUser.scss'
 import { activityData } from '../data/activitiesData'
 const MentorUser = () => {
     const {id} = useParams()
-    const user = userMentors.find(user => user?.id == id)
+    const user = userMentors.find(user => user?.id == Number(id))
     const [selectedAct, setSelectedAct] = useState("all")
 
 
