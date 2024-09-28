@@ -30,21 +30,21 @@ const MentorUser = () => {
   return (
     <div className='mentorUser bg-primary-var'>
        
-        <header className='p-10 bg-alt justify-between rounded-tl-3xl rounded-tr-3xl border flex gap-10'>
-            <div className='flex gap-10'>
+        <header className='p-3 md:p-10 bg-alt justify-center items-center md:items-stretch md:justify-between flex-col md:flex-row rounded-tl-3xl rounded-tr-3xl border flex gap-10'>
+            <div className='flex flex-col md:flex-row md:gap-10'>
                 
         
-                <img src={user?.image} alt="" className={`${user?.theme} rounded-2xl border border-black bg-red-300 w-52 `}/>
+                <img src={user?.image} alt="" className={`${user?.theme} rounded-2xl border border-black bg-red-300 w-52 m-auto`}/>
 
                 <div className='mt-8 bg-[#DFE4F8] rounded-2xl'>
 
-                    <div className='text-4xl gap-3 py-4 flex-[30%] px-10 font-semibold flex items-'>
+                    <div className='text-4xl gap-3 py-4 flex-[30%] px-2 md:px-10 font-semibold flex items-'>
                         <Person/><div>
-                        <p className='text-2xl  leading-3'>{user?.first_name } {user?.last_name}</p>
+                        <p className='text-2xl  md:leading-6'>{user?.first_name } {user?.last_name}</p>
                         <p className='text-xl my-2 font-normal'> <span className='font-semibold'>{user?.current_position }</span> at <span className='font-semibold'> {user?.current_company}</span></p>
                         </div>
                     </div>
-                    <div className='text-4xl gap-3  flex-[30%] px-10 font-semibold flex items-'>
+                    <div className='text-4xl gap-3  flex-[30%] px-2 md:px-10 font-semibold flex items-'>
                         <TargetIcon/><div>
                         <p className='font-normal text-lg leading-5'>Target domain</p>
                         <p className='text-xl my-2 font-normal'> <span className='font-semibold'>{user?.job_role }</span></p>
@@ -53,7 +53,7 @@ const MentorUser = () => {
                 </div>          
             </div>
 
-            <div className='max-w-[230px] w-full flex flex-col'>
+            <div className='max-w-[230px] w-full flex md:flex-col'>
                 <div className='mt-auto'>
                 <div className='bg-primary-var rounded-lg py-2 my-0 flex items-center justify-center gap-3 px-4 pr-8'>
                     <span className='text-gray-700 font-semibold flex items-center gap-1'>5.0 <FavoriteIcon/></span>
@@ -67,7 +67,7 @@ const MentorUser = () => {
             
         </header>
 
-        <div className='flex p-12 gap-5'>
+        <div className='flex p-12 gap-5 overflow-x-auto'>
             {actions.map(item => (
         <button onClick={() => setSelectedAct(item.action)} className={`${selectedAct == item.action && "text-white bg-[#624A14]"} px-8 py-3 shrink-0 border border-gray-400/60 rounded-3xl flex items-center bg-white gap-2 font-medium text-base`}>   {item.label} </button>
 
@@ -76,42 +76,34 @@ const MentorUser = () => {
         </div>
         <div className='px-5'>
 
-        {/* <div className=' flex p-12 gap-5'>
-            <span className='px-5 py-1 border border-gray-400/60 rounded-3xl flex items-center gap-2 text-gray-700 font-medium'>   Role  <CloseIcon/>    </span>
-            <span className='px-5 py-1  border border-gray-400/60 rounded-3xl flex items-center gap-2 text-gray-700 font-medium'>   Company  <CloseIcon/>    </span>
-            <span className='px-5 py-1 border border-gray-400/60 rounded-3xl flex items-center gap-2  text-gray-700 font-medium'>   Slot  <CloseIcon/>    </span>
-            <span className='px-5 py-1 border border-gray-400/60 rounded-3xl flex items-center gap-2  text-gray-700 font-medium'>   Rate  <CloseIcon/>    </span>
-          
-        </div> */}
-
         <section>
 
             {activityData.map(item => (
-                  <div className='flex my-4 bg-white p-5 rounded-3xl gap-3'>
-                  <div className='flex-1'>
-                      <h3 className='text-3xl font-semibold'>{item.title}</h3>
-                      <p className='text-xl text-gray-600 font-normal'>{item.note}</p>
-      
-                  </div>
-                  <div className='flex-1 flex justify-center items-center'>
-      
-                  <div className='p-3 rounded-2xl items-center justify-between border flex border-[#EEF0F8] bg-[#EEF0F8] w-full'>
-                    <div>
-                        <div className='flex items-center gap-3'>
-                            <img src={item.event.icon} alt="" />
-                            <span className='text-2xl font-semibold'>{item.event.time_period}</span>
+                  <div className='flex flex-col md:flex-row my-4 bg-white p-5 rounded-3xl gap-3'>
+                    <div className='flex-1'>
+                        <h3 className='text-3xl font-semibold'>{item.title}</h3>
+                        <p className='text-xl text-gray-600 font-normal'>{item.note}</p>
+        
+                    </div>
+                    <div className='flex-1 flex justify-center items-center'>
+        
+                    <div className='p-3 rounded-2xl items-center justify-between border flex border-[#EEF0F8] bg-[#EEF0F8] w-full'>
+                        <div>
+                            <div className='flex items-center gap-3'>
+                                <img src={item.event.icon} alt="" />
+                                <span className='text-2xl font-semibold'>{item.event.time_period}</span>
 
 
-                        </div>
-                        <p className='text-xl text-gray-600'>Google meet</p>
+                            </div>
+                            <p className='text-xl text-gray-600'>Google meet</p>
 
+                            
+                            </div>
+                            
+                            <span className='py-2 px-6 bg-white rounded-3xl border border-[#52525B] flex items-center  font-semibold gap-3'><InCurrency/>{item.fee}</span>
                         
-                        </div>
-                        
-                        <span className='py-2 px-6 bg-white rounded-3xl border border-[#52525B] flex items-center  font-semibold gap-3'><InCurrency/>{item.fee}</span>
-                       
-                  </div>
-                  </div>
+                    </div>
+                    </div>
       
               </div>
 
@@ -120,11 +112,11 @@ const MentorUser = () => {
              </section>
 
         <section className='py-4'>
-            <div className='flex justify-between my-7'>
-                <h3 className='text-[40px] font-semibold'>Testimonials</h3>
-                <p className='font-normal text-3xl flex gap-4 items-center'>Rating <span className='bg-white py-2 px-8 rounded-lg  font-semibold flex items-center gap-3'>5.0 <FavoritIconLg/></span></p>
+            <div className='flex flex-col md:flex-row justify-between my-7'>
+                <h3 className='text-[40px] font-semibold text-center '>Testimonials</h3>
+                <p className='font-normal text-3xl justify-center flex gap-4 items-center'>Rating <span className='bg-white py-2 px-8 rounded-lg  font-semibold flex items-center gap-3'>5.0 <FavoritIconLg/></span></p>
             </div>
-            <div className='grid grid-cols-2 gap-5 mb-5'>
+            <div className='grid md:grid-cols-2 gap-5 mb-5'>
                 {testimonialData.map(item => (
                     <div className='border md:p-10 border-[#F2D9AA] bg-white p-5 rounded-2xl'>
                     <div>
