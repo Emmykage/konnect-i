@@ -10,7 +10,7 @@ const UserCardInfo = () => {
 {
     userMentors.map(user => (
 
-        <div className='infoCard p-10 flex flex-col md:flex-row bg-white rounded-3xl gap-4 mb-10'>
+        <div className='infoCard md:px-10 md:py-10 px-2 py-4 flex flex-col md:flex-row bg-white rounded-3xl gap-4 mb-10'>
         <div>
             <div className='w-56 img-cont block m-auto'>
             <img src={user.image} alt="" className={`${user.theme} rounded-2xl w-full `}/>

@@ -87,7 +87,7 @@ const MentorUser = () => {
                     </div>
                     <div className='flex-1 flex justify-center items-center'>
         
-                    <div className='p-3 rounded-2xl items-center justify-between border flex border-[#EEF0F8] bg-[#EEF0F8] w-full'>
+                    <div className='p-3 gap-3 rounded-2xl md:items-center justify-between border flex flex-col md:flex-row border-[#EEF0F8] bg-[#EEF0F8] w-full'>
                         <div>
                             <div className='flex items-center gap-3'>
                                 <img src={item.event.icon} alt="" />
@@ -95,7 +95,7 @@ const MentorUser = () => {
 
 
                             </div>
-                            <p className='text-xl text-gray-600'>Google meet</p>
+                            <p className='text-xl text-gray-600'>{item.event.event_type}</p>
 
                             
                             </div>
@@ -126,11 +126,11 @@ const MentorUser = () => {
                         {item.text}
                     </p>
 
-                    <div className='flex gap-5'>
+                    <div className='flex flex-col md:flex-row items-center gap-5'>
                         <img src={testImage} alt="" className='w-16' />
                         <div>
-                            <p className='text-2xl'>{item.name}</p>
-                            <p className='text-xl text-gray-500'>{item.occuppation}</p>
+                            <p className='text-2xl text-center md:text-left'>{item.name}</p>
+                            <p className='text-xl text-gray-500 text-center md:text-left'>{item.occuppation}</p>
                         </div>
 
                     </div>

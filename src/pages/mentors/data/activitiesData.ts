@@ -23,7 +23,7 @@ export const activityData = [{
     title: "1 month Career Guidance",
     note: "Ongoing support to help you achieve your career goals",
     event: {
-        event_type: "Google Meet",
+        event_type: "Google Meet, DM",
         time_period: "1 month",
         icon: "/svg/cube.svg"
 
