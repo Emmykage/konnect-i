@@ -32,7 +32,6 @@ const Mentors = () => {
                 />
                     <Select
                     className='custom-select'
-                    // style={{ width: 120, borderRadius: "20px" }}
                     allowClear
                     placeholder="Slot"
                     suffixIcon={<DownArrow/>}
@@ -41,7 +40,6 @@ const Mentors = () => {
                     />
                        <Select
                         className='custom-select'
-                        // style={{ width: 120, borderRadius: "20px" }}
                         allowClear
                         placeholder="Rating"
                         suffixIcon={<DownArrow/>}            
