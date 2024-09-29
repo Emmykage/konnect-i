@@ -24,8 +24,8 @@ const UserCardInfo = () => {
             </div>
         </div>
         <div className='info-content px-0 flex-1'>
-            <div className='personal-info flex flex-col md:flex-row flex-1'>
-                <div className='px-4 flex-1'>
+            <div className='personal-info flex flex-col lg:flex-row flex-1 flex-wrap'>
+                <div className='px-4 flex-[2] w-full'>
                     <div className='flex items-cent gap-3'>
                         <span className='my-1'>
                         <Person/>
@@ -64,16 +64,16 @@ const UserCardInfo = () => {
     
     
                 </div>
-                <div className="bg-red-">
+                <div className="bg-red- ">
                     <NavLink to={`/mentors/${user.id}`} className={"block md:w-max rounded-3xl text-gray-800  border font-semibold border-black/80 text-base px-8 py-2 bg-theme-purple text-center"}>Konnect</NavLink>
                 </div>
     
             </div>
             <div className='flex bg-[#EEF0F8] items-cent gap-3 py-4 px-4 my-5 border rounded-2xl'>
                 <HandShake/>
-                <div className='flex-1'>
+                <div className='flex-1 w-full'>
                     <p>Help you with</p>
-                    <div className='flex justify gap-4 md:gap-10 flex-col md:flex-row '>
+                    <div className='flex flex-wrap  gap-4 lg:gap-8 flex-col md:flex-row '>
                         <span className='font-semibold  text-base md:text-xl'>Interview Preparation</span>
                         <span className='text-gray-400 hidden md:block'>|</span>
                         <span className='font-semibold  text-base md:text-xl'>Resume review Preparation</span>
